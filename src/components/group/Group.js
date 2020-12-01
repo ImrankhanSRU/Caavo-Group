@@ -34,12 +34,12 @@ export default class Group extends Component {
                     <img className="group-logo" src={UserIcon} alt="" />
                     <form className = "form">
                         <div>
-                            <label>Name</label>
+                            <label className = "label">Name</label>
                             <input type="text" placeholder="group name" value = {this.state.name} onChange = {(e) => {this.setName(e.target.value)}} />
                         </div>
 
                         <div style = {{marginTop: "20px"}}>
-                            <label>Description</label>
+                            <label className = "label">Description</label>
                             <input type="text" placeholder="group description" value = {this.state.desc} onChange = {(e) => {this.setDesc(e.target.value)}} />
                         </div>
                     </form>
