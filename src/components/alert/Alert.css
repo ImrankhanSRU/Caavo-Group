@@ -1,0 +1,37 @@
+.alert {
+    position: absolute;
+    top: 20px;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    width: 40%;
+    text-align: center;
+    animation-name: animate;
+    animation-duration: 0.5s;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+
+  strong {
+      margin-right: 20px;
+  }
+
+  @keyframes animate {
+    from {top: -100px}
+    to {top: 20px}
+}
+  

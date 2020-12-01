@@ -1,0 +1,127 @@
+.list-container {
+    width: 60%;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card {
+    /* flex: 1 0 17%; */
+    margin-bottom: 20px;
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.card:hover {
+    opacity: 0.7;
+}
+
+.user-image {
+    background-color: #3A3A3A;
+    width: 150px;
+    height: 130px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-top: 10px;
+}
+
+.user-name {
+    width: 130px;
+    padding: 10px;
+    background-color: #5798EB;
+    text-align: center;
+    margin-top: -5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+.checkbox-container {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
+  }
+  
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-top-right-radius: 10px;
+
+  }
+  
+  .checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .checkbox-container input:checked ~ .checkmark {
+    background-color: #5798EB;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .checkbox-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .button {
+      padding: 20px 40px;
+      color: white;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-right: 20px;
+      margin-top: 20px;
+  }
+
+  .button:hover:enabled {
+      opacity: 0.8;
+  }
+
+  .update-btn {
+      background-color: #0074BA;
+  }
+
+  .remove-btn {
+      background-color: #FF5B68;
+  }
